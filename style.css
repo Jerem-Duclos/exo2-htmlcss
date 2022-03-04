@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;900&family=Raleway:wght@700&display=swap');
+
+:root {
+    --couleur: #f5614d;
+    --police1: Montserrat, sans-serif;
+    --police2: Raleway, serif;
+    --little-gap: 16px;
+    --medium-gap: 32px;
+    --big-gap: 32px;
+    --vbig-gap: 45px;
+}
+
+html {
+    font-size: 12px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+}
+
+#textes {
+    margin-left: var(--medium-gap);
+    margin-right: var(--medium-gap);
+    column-gap: var(--medium-gap);
+    row-gap: var(--medium-gap);
+    margin-bottom: var(--medium-gap);
+}
+
+#clothings {
+    background-image: url('img/clothings.jpg');
+    background-size: cover;
+    background-position: center top;
+    margin-top: var(--big-gap);
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-family: var(--police2);
+    font-size: 2.5rem;
+    font-weight: 700; 
+    width: 100%;
+}
+
+#access {
+    background-image: url('img/accessories.jpg');
+    background-size: cover;
+    background-position: center top;
+    margin-top: var(--medium-gap);
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--police2);
+    font-size: 2.5rem;
+    font-weight: 700; 
+    width: 100%;  
+}
+
+.boutons {
+    margin-left: 10px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+    background-color: var(--couleur);
+    border: none;
+    color: white;
+    font-family: var(--police2);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#sales {
+    background-image: url('img/sale_starts_in.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: var(--medium-gap);
+    margin-bottom: var(--medium-gap);
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--police2);
+    font-size: 3.2rem;
+    font-weight: 700;  
+}
+
+#timer {
+    display: flex;
+    font-family: var(--police1);
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+#timer p:first-child {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;   
+}
+
+#timer p:last-child {
+    font-size: 0.80rem;
+    font-weight: bold;
+    text-align: center;    
+}
+
+#sales hr {
+    margin-top: var(--vbig-gap);
+    margin-bottom: var(--vbig-gap);
+    width: 40px;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+    #clothings-access {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: var(--medium-gap);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    #timer p:first-child {
+        font-size: 5rem;
+    }
+    
+    #timer p:last-child {
+        font-size: 1rem;
+    }
+
+    #sales hr {
+        width: 60px;
+    }
+}
